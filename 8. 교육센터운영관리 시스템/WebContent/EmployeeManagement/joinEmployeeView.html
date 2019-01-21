@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="employeeStyle.css">
+<script type="text/javascript" src="employeeScript.js"></script>
+
+</head>
+<body>
+	<form method="post" onsubmit="javascript:return on_submit();"
+		action="regEmployee.jsp" method="post">
+		<div align="center">
+			<h1>한울 교육센터 회원가입[직원]</h1>
+			<fieldset>
+				<legend>기본정보</legend>
+				<table style="width: 800px">
+					<tr>
+						<td>한글 성명</td>
+						<td><input type="text" name="input_kor_name"
+							placeholder="10자 이내"></td>
+						<td>영문 성명</td>
+						<td><input type="text" name="input_eng_name"></td>
+					</tr>
+
+					<tr>
+						<td>주민등록번호</td>
+						<td><input type="text" name="input_ssn_fst">
+							- <input type="text" name="input_ssn_sec"></td>
+						<td>성별</td>
+						<td><select name="input_sex">
+								<option selected="selected">남</option>
+								<option>여</option>
+						</select></td>
+					</tr>
+
+					<tr>
+						<td>직원ID</td>
+						<td colspan="4"><input type="text" name="input_employee_id"></td>
+					</tr>
+
+					<tr>
+						<td>ID</td>
+						<td><input type="text" name="input_id" placeholder="6~12자리"></td>
+						<td>비밀번호</td>
+						<td><input type="password" name="input_password" placeholder="6~12자리"></td>
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<legend>연락처 정보</legend>
+				<table style="width: 800px">
+					<tr>
+						<td>주민등록지주소</td>
+						<td colspan="5"><input type="text" style="width: 650px"
+							name="input_res_address"></td>
+					</tr>
+
+					<tr>
+						<td>거주지주소</td>
+						<td colspan="4"><input type="text" style="width: 650px"
+							name="input_address"></td>
+					</tr>
+
+					<tr>
+						<td>집전화번호</td>
+						<td><input type="text" style="width: 50px"
+							name="input_home_phone_fst"> - <input type="text"
+							style="width: 50px" name="input_home_phone_sec"> - <input
+							type="text" style="width: 50px" name="input_home_phone_tir"></td>
+					</tr>
+
+					<tr>
+						<td>휴대폰 번호</td>
+						<td><input type="text" style="width: 50px"
+							name="input_phone_fst"> - <input type="text"
+							style="width: 50px" name="input_phone_sec"> - <input
+							type="text" style="width: 50px" name="input_phone_tir"></td>
+					</tr>
+
+					<tr>
+						<td>비상연락번호</td>
+						<td><input type="text" style="width: 50px"
+							name="input_emergency_phone_fst"> - <input type="text"
+							style="width: 50px" name="input_emergency_phone_sec"> - <input
+							type="text" style="width: 50px" name="input_emergency_phone_tir"></td>
+					</tr>
+
+					<tr>
+						<td>이메일</td>
+						<td><input type="text" style="width: 200px"
+							name="input_email_fst"> @ <input type="text"
+							style="width: 200px" name="input_email_sec" placeholder="ex)kumoh.ac.kr">
+					</tr>
+				</table>
+			</fieldset>
+
+			<fieldset>
+				<legend>계좌 정보</legend>
+				<table style="width: 800px">
+					<tr>
+						<td>은행 코드</td>
+						<td><input type="text" style="width: 680px"
+							name="input_bank_code"></td>
+					</tr>
+
+					<tr>
+						<td>계좌번호</td>
+						<td><input type="text" style="width: 680px"
+							name="input_account_num" placeholder="'-' 제외">
+					</tr>
+
+					<tr>
+						<td>예금주 명</td>
+						<td><input type="text" style="width: 680px"
+							name="input_account_holder">></td>
+					</tr>
+				</table>
+			</fieldset>
+
+		</div>
+		<br>
+		<div align="center">
+			<input type="submit" value="등록" class="btn_submit"> <input
+				type="button" value="취소" class="btn_cancle" onclick="cancle()">
+		</div>
+	</form>
+</body>
+</html>

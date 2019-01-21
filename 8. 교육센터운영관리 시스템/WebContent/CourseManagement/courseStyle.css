@@ -1,0 +1,58 @@
+body {
+	background-color: white;
+}
+
+table.ex1 {
+	width: 98%;
+	margin: 0 auto;
+	text-align: center;
+	border-collapse: collapse
+}
+
+.ex1 th, .ex1 td {
+	padding: 5px 10px
+}
+
+.ex1 thead th {
+	background: #ABC668;
+	color: #fff;
+	text-align: center;
+	border-right: 1px solid #fff
+}
+
+.ex1 tbody th {
+	text-align: left;
+	width: 12%
+}
+
+.ex1 tbody td.date1 {
+	text-align: center;
+	width: 8%
+}
+
+.ex1 tbody td.desc {
+	text-align: left;
+	width: 35%
+}
+
+.ex1 tbody tr.odd {
+	background: #f9f9f9
+}
+
+.ex1 tbody tr.odd th {
+	background: #f2f2f2
+}
+
+.ex1 tbody tr:hover {
+	background: #F3F5BB
+}
+
+.ex1 tbody tr:hover th {
+	background: #F2F684;
+	color: #1BA6B2
+}
+
+.button{
+	width: 180px;
+	margin: 5px;
+}

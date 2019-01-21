@@ -1,0 +1,17 @@
+#btn_student{
+	width: 200px;
+	height: 50px;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+#btn_employee{
+	width: 200px;
+	height: 50px;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+body{
+	background-color: white;
+}
